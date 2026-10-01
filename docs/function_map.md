@@ -46,3 +46,6 @@ PHLOWER 适合多模态 cell ID 已对齐、且问题包含复杂分支树的场
 ## 空间数据基础设施
 
 SpatialData 不是一个自动完成生物学推断的模型，而是进入空间分析前的互操作层。统一顺序是 `input audit → element/coordinate/unit audit → platform-native QC → SpatialData read/write → Nicheformer/MISO 或邻域分析 → independent validation`。先记录 table/image/labels/shapes/points、坐标变换和存储格式；成功读写不等于 segmentation、registration 或空间信号已经正确。
+## 通用生物信息工具层
+
+scikit-bio 适合序列、feature table、距离、多样性、taxonomy 和系统发育的 Python 数据结构与算法。统一顺序是 `input audit → operation/format/ID/metadata audit → assay-specific baseline → scikit-bio operation → sample-level interpretation → evidence card`。它不自动选择实验单位、零假设或生物学机制；入口为 `python/17_scikit_bio_manifest.py`。
