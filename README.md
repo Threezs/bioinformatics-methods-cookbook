@@ -71,3 +71,8 @@ templates/script_header.R       分析脚本头部模板
 
 - `python/14_pinnacle_manifest.py`：登记单细胞表达、PPI 网络、cell-type/tissue metadata 和可选 checkpoint，生成 context-aware protein/target prioritization 的可审计 manifest。
 - 先与 PPI degree、random walk、GAT 或任务特异的经典排序 baseline 比较；embedding/排序分数不能替代因果或药效验证。
+
+## 2025 多模态轨迹扩展
+
+- `python/15_phlower_manifest.py`：登记两种以上共享 cell ID 的模态、cell metadata 和 root/terminal labels，生成复杂分支轨迹的可审计 manifest。
+- 先与 CellRank、图拉普拉斯或其他 trajectory baseline 比较 branch stability；不要把推断树当作已经证实的谱系。
