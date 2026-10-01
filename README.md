@@ -95,3 +95,9 @@ templates/script_header.R       分析脚本头部模板
 
 - `python/19_novae_manifest.py`：登记空间输入、spot/cell domain 任务、gene panel、batch/section split、checkpoint 和平台信息；默认不下载权重、不启动推理。
 - 它是 `manifest-only`，适合在 SpatialData 元素/坐标审计后使用，并与空间邻域/marker baseline、held-out section 和图像或正交 marker 验证配套；完整阅读卡片在 literature-workbench 的 P022。
+
+
+## 2025 多模态与空间模拟层
+
+- `python/20_scmultisim_manifest.py`：登记 cell differential tree、GRN、RNA/ATAC/velocity/spatial 模态、互作/噪声、batch-effect 和 seed；默认不安装 Bioconductor、不启动模拟。
+- 它是 `manifest-only`，适合在方法 benchmark 前产生可控 truth 和负对照；完整阅读卡片在 literature-workbench 的 P023，模拟排名仍需经验数据 sanity check。
