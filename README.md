@@ -16,7 +16,7 @@ docs/                           方法选择和解释边界
 templates/script_header.R       分析脚本头部模板
 ~~~
 
-近期单细胞、长读长和 foundation model 方法的可运行入口集中维护在 [nature-methods-bioinformatics-catalog](https://github.com/Threezs/nature-methods-bioinformatics-catalog)，其中 R 入口优先，Python 入口负责 CellRank 2、scGPT、scFoundation、Nicheformer、Monod 和 SATURN 的受控配置。
+近期单细胞、长读长和 foundation model 方法的可运行入口集中维护在 [nature-methods-bioinformatics-catalog](https://github.com/Threezs/nature-methods-bioinformatics-catalog)，其中 R 入口优先，Python 入口负责 CellRank 2、scGPT、scFoundation、Nicheformer、Monod、SATURN 和 UCE 的受控配置。
 
 ## 使用原则
 
