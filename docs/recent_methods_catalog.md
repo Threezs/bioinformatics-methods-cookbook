@@ -13,6 +13,7 @@
 | 细胞状态密度和时间连续化 | python/09_mellon_template.py | cell representation + optional time metadata | manifest-only | 固定 representation；density 不是 lineage probability |
 | foundation model embedding | python/02–03 | h5ad/counts + pinned checkpoint | manifest-only | 许可、权重哈希、经典基线和 GPU 资源 |
 | PINNACLE 蛋白上下文与靶点优先级 | python/14_pinnacle_manifest.py | expression + PPI network + context metadata | manifest-only | 网络版本、上下文标签、checkpoint 和 held-out 排序指标 |
+| PHLOWER 多模态复杂分支轨迹 | python/15_phlower_manifest.py | two or more aligned modalities + cell metadata | manifest-only | shared cell IDs、root/direction、branch stability 和独立验证 |
 | 空间 niche/context transfer | python/04_nicheformer_template.py | spatial/context data + checkpoint | manifest-only | domain shift、切片/患者和外部验证 |
 | 多模态空间组学整合 | python/10_miso_manifest.py | aligned spatial modalities + optional image features | manifest-only | shared spot/cell key、坐标和 Python 3.7/Git-LFS |
 | 多模态整合 benchmark | python/11_scmmib_manifest.py | paired/unpaired/mosaic dataset manifest | manifest-only | ranking 依赖 task、modality 和 metric |
