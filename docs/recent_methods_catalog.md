@@ -26,3 +26,4 @@
 选择顺序、样本级汇总和解释边界见 catalog 的 [docs/function_map.md](https://github.com/Threezs/nature-methods-bioinformatics-catalog/blob/main/docs/function_map.md) 和 [docs/sample_level_reporting.md](https://github.com/Threezs/nature-methods-bioinformatics-catalog/blob/main/docs/sample_level_reporting.md)。方法论文中的 benchmark 结果只用于形成候选方案，最终选择要结合自己的物种、样本量、平台、实验单位和独立验证。
 
 Mellon、MISO 和 SCMMIB 目前只生成 manifest；manifest 校验表示输入契约已经记录，不表示官方模型或 benchmark 已经完成复现。
+| SpatialData 空间数据结构与坐标互操作 | python/16_spatialdata_manifest.py | SpatialData/Zarr、表、图像、labels、shapes、points | manifest-only | element names、坐标系、单位、变换链、platform reader 和 serialization |
