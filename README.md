@@ -89,3 +89,9 @@ templates/script_header.R       分析脚本头部模板
 
 - `python/18_saccelerator_manifest.py`：登记空间数据、方法版本、ARI/NMI、CHAOS/PAS/entropy、共识规则和专家评审协议。
 - 它是 `manifest-only`，适合在 SpatialData/MISO/Nicheformer 之后比较空间域稳定性；完整阅读卡片在 literature-workbench 的 P021，手工标签和共识分数仍需独立验证。
+
+
+## 2025–2026 空间 foundation model 层
+
+- `python/19_novae_manifest.py`：登记空间输入、spot/cell domain 任务、gene panel、batch/section split、checkpoint 和平台信息；默认不下载权重、不启动推理。
+- 它是 `manifest-only`，适合在 SpatialData 元素/坐标审计后使用，并与空间邻域/marker baseline、held-out section 和图像或正交 marker 验证配套；完整阅读卡片在 literature-workbench 的 P022。
