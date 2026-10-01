@@ -13,5 +13,6 @@
 | 空间 niche / context transfer | python/04_nicheformer_template.py | spatial or dissociated data + checkpoint | domain shift、组织平台和外部验证 |
 | nascent/mature RNA 动力学 | python/05_monod_template.py | matched nascent and mature counts | 不是常规 DE 或 RNA velocity 的替代品 |
 | 跨物种单细胞整合 | python/06_saturn_template.py | species-specific h5ad + protein embeddings | gene/protein coverage、标签质量和跨物种 QC |
+| 零样本单细胞 embedding | python/07_uce_manifest.py | h5ad + pinned checkpoint | gene/protein vocabulary、物种元数据和可解释 baseline |
 
 推荐先在 catalog 的 data/mock 上确认输入契约，再把路径和版本写进 config/methods.yml。方法论文中的 benchmark 结果只用于形成候选方案，最终选择要结合自己的物种、样本量、平台、实验单位和独立验证。
