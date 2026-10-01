@@ -58,3 +58,11 @@ templates/script_header.R       分析脚本头部模板
 | 多模态整合器 benchmark | `python/11_scmmib_manifest.py` | manifest-only | paired/unpaired/mosaic 任务、数据集清单和评价指标 |
 
 这些入口只做输入和运行契约审计；需要真实模型/benchmark 结果时，回到官方仓库固定环境，并把结果写回 literature-workbench 的 P012–P014 阅读卡片。
+
+
+## 长读长专题的新增分支
+
+- `python/13_narmbench_manifest.py`：NaRMBench 的 nanopore direct-RNA 修饰检测评估入口；先记录 RNA002/RNA004 chemistry、ground truth、重训练状态和 site-level calibration。
+- `python/12_scmultibench_manifest.py`：scMultiBench 多任务多模态整合评估入口；先选择任务和 split，再比较 task-level metrics。
+
+这两个入口均为 manifest-only，适合把方法论文转成可审计的候选方案，不把 benchmark 登记误写成已复现结果。

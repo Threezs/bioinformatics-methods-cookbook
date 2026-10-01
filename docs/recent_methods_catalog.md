@@ -15,6 +15,8 @@
 | 空间 niche/context transfer | python/04_nicheformer_template.py | spatial/context data + checkpoint | manifest-only | domain shift、切片/患者和外部验证 |
 | 多模态空间组学整合 | python/10_miso_manifest.py | aligned spatial modalities + optional image features | manifest-only | shared spot/cell key、坐标和 Python 3.7/Git-LFS |
 | 多模态整合 benchmark | python/11_scmmib_manifest.py | paired/unpaired/mosaic dataset manifest | manifest-only | ranking 依赖 task、modality 和 metric |
+| 多任务多模态整合 benchmark | python/12_scmultibench_manifest.py | dataset manifest + selected tasks | manifest-only | task、modality、split 和任务级指标 |
+| nanopore RNA 修饰检测 benchmark | python/13_narmbench_manifest.py | direct-RNA reads + reference + chemistry | manifest-only | RNA002/RNA004、ground truth、retraining、site-level calibration |
 | nascent/mature RNA 动力学 | python/05_monod_template.py | matched counts + official config | manifest-only | 不是常规 DE 或 RNA velocity 替代品 |
 | 跨物种单细胞整合 | python/06_saturn_template.py | species-specific h5ad + protein embeddings | manifest-only | gene/protein coverage、标签质量和跨物种 QC |
 | 零样本单细胞 embedding | python/07_uce_manifest.py | h5ad + pinned checkpoint | manifest-only | vocabulary、物种元数据和可解释 baseline |

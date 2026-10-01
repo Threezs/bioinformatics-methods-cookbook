@@ -29,3 +29,9 @@ CellRank、embedding、niche 和细胞比例输出先进入 catalog 的 docs/sam
 - Mellon：用固定的高维 representation 估计 cell-state density；先做 representation 与邻域敏感性分析，不把密度写成谱系概率。
 - MISO：对齐空间组学和图像/特征后再做 multimodal embedding 与 clustering；先检查 spot/cell key 和坐标。
 - SCMMIB：把 paired、unpaired、mosaic 任务分开记录，并同时保留 accuracy、robustness、scalability；benchmark 不是万能排名。
+
+
+## 长读长与 benchmark 分支
+
+- scMultiBench：把 multimodal integration 评估拆成 reduction、batch correction、clustering、classification、imputation、feature selection 和 spatial registration，保留 task-level metrics。
+- NaRMBench：把 direct-RNA modification detection 拆成 preprocessing、retraining、evaluation 和 downstream validity；不要把 chemistry-specific performance 外推成普遍修饰机制。
