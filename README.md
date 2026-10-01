@@ -85,3 +85,7 @@ templates/script_header.R       分析脚本头部模板
 
 - `python/17_scikit_bio_manifest.py`：登记序列、表格、距离、多样性、taxonomy 或 phylogeny 操作的输入格式、ID、metadata 和运行契约。
 - 它是 `manifest-only`，适合作为 R-first 项目的 Python 辅助层；完整阅读卡片在 literature-workbench 的 P020，运行结果仍需 assay-specific baseline 和样本级解释。
+## 2026 空间聚类共识层
+
+- `python/18_saccelerator_manifest.py`：登记空间数据、方法版本、ARI/NMI、CHAOS/PAS/entropy、共识规则和专家评审协议。
+- 它是 `manifest-only`，适合在 SpatialData/MISO/Nicheformer 之后比较空间域稳定性；完整阅读卡片在 literature-workbench 的 P021，手工标签和共识分数仍需独立验证。
