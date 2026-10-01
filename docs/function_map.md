@@ -39,3 +39,7 @@ CellRank、embedding、niche 和细胞比例输出先进入 catalog 的 docs/sam
 ## 蛋白上下文与靶点优先级
 
 PINNACLE 将表达上下文、PPI 网络和 cell-type/tissue 层级放进同一个图表示框架。使用顺序是 `input audit → network/context audit → PPI baseline → PINNACLE manifest/inference → held-out ranking → independent validation`。结果回链到 literature-workbench 的 P017，并明确不能把 target score 写成因果功能或治疗疗效。
+
+## 多模态复杂分支轨迹
+
+PHLOWER 适合多模态 cell ID 已对齐、且问题包含复杂分支树的场景。统一顺序是 `input audit → modality/key audit → root/direction audit → CellRank/graph baseline → PHLOWER → branch stability → independent validation`。结果回链到 literature-workbench 的 P018，不能把无向 embedding 或 regulator score升级成谱系和因果结论。
