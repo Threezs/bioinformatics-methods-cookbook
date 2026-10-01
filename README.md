@@ -77,3 +77,7 @@ templates/script_header.R       分析脚本头部模板
 
 - `python/15_phlower_manifest.py`：登记两种以上共享 cell ID 的模态、cell metadata 和 root/terminal labels，生成复杂分支轨迹的可审计 manifest。
 - 先与 CellRank、图拉普拉斯或其他 trajectory baseline 比较 branch stability；不要把推断树当作已经证实的谱系。
+## 2025 空间数据基础设施扩展
+
+- `python/16_spatialdata_manifest.py`：登记 SpatialData/Zarr、表、图像、labels、shapes、points、坐标系和平台，作为 Nicheformer/MISO/空间邻域分析前的互操作审计入口。
+- 它是 `manifest-only`，不会自动修复 segmentation、registration、坐标单位或组织混杂；完整阅读卡片在 literature-workbench 的 P019。
