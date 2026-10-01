@@ -45,3 +45,16 @@ templates/script_header.R       分析脚本头部模板
 - [fgsea](https://bioconductor.org/packages/fgsea/)
 - [decoupleR](https://saezlab.github.io/decoupleR/)
 - [ropensci/targets](https://github.com/ropensci/targets)
+
+
+## 2026 Nature Methods 扩展
+
+方法目录新增三个按功能登记的条目：
+
+| 功能 | 入口 | 状态 | 先固定什么 |
+|---|---|---|---|
+| cell-state density 与时间连续化 | `python/09_mellon_template.py` | manifest-only | representation、时间/样本字段和 density baseline |
+| 多模态空间组学整合 | `python/10_miso_manifest.py` | manifest-only | shared spot/cell key、坐标、图像特征和 Python 3.7/Git-LFS 环境 |
+| 多模态整合器 benchmark | `python/11_scmmib_manifest.py` | manifest-only | paired/unpaired/mosaic 任务、数据集清单和评价指标 |
+
+这些入口只做输入和运行契约审计；需要真实模型/benchmark 结果时，回到官方仓库固定环境，并把结果写回 literature-workbench 的 P012–P014 阅读卡片。

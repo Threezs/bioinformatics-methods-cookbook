@@ -22,3 +22,10 @@ input audit → baseline → method-specific analysis → sample-level summary �
 ## 细胞级输出的统一规则
 
 CellRank、embedding、niche 和细胞比例输出先进入 catalog 的 docs/sample_level_reporting.md（https://github.com/Threezs/nature-methods-bioinformatics-catalog/blob/main/docs/sample_level_reporting.md），按 sample/donor 汇总后才进入条件比较。foundation model manifest 只表示输入和 checkpoint 已记录，不表示模型推理已经完成。
+
+
+## 新增多模态/状态空间功能
+
+- Mellon：用固定的高维 representation 估计 cell-state density；先做 representation 与邻域敏感性分析，不把密度写成谱系概率。
+- MISO：对齐空间组学和图像/特征后再做 multimodal embedding 与 clustering；先检查 spot/cell key 和坐标。
+- SCMMIB：把 paired、unpaired、mosaic 任务分开记录，并同时保留 accuracy、robustness、scalability；benchmark 不是万能排名。
