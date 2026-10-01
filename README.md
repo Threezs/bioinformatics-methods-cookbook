@@ -81,3 +81,7 @@ templates/script_header.R       分析脚本头部模板
 
 - `python/16_spatialdata_manifest.py`：登记 SpatialData/Zarr、表、图像、labels、shapes、points、坐标系和平台，作为 Nicheformer/MISO/空间邻域分析前的互操作审计入口。
 - 它是 `manifest-only`，不会自动修复 segmentation、registration、坐标单位或组织混杂；完整阅读卡片在 literature-workbench 的 P019。
+## 2026 通用 Python 工具层
+
+- `python/17_scikit_bio_manifest.py`：登记序列、表格、距离、多样性、taxonomy 或 phylogeny 操作的输入格式、ID、metadata 和运行契约。
+- 它是 `manifest-only`，适合作为 R-first 项目的 Python 辅助层；完整阅读卡片在 literature-workbench 的 P020，运行结果仍需 assay-specific baseline 和样本级解释。
