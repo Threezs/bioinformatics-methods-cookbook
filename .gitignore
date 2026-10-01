@@ -1,0 +1,13 @@
+*.pdf
+*.rds
+*.RData
+.Rhistory
+.Rproj.user/
+_targets/
+outputs/
+results/
+data/raw/*
+data/private/*
+.env
+__pycache__/
+*.pyc
