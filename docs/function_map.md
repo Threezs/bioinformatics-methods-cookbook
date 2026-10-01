@@ -49,3 +49,6 @@ SpatialData 不是一个自动完成生物学推断的模型，而是进入空�
 ## 通用生物信息工具层
 
 scikit-bio 适合序列、feature table、距离、多样性、taxonomy 和系统发育的 Python 数据结构与算法。统一顺序是 `input audit → operation/format/ID/metadata audit → assay-specific baseline → scikit-bio operation → sample-level interpretation → evidence card`。它不自动选择实验单位、零假设或生物学机制；入口为 `python/17_scikit_bio_manifest.py`。
+## 空间域聚类与专家共识
+
+SACCELERATOR 负责评估和共识组织，不是单一聚类器。统一顺序是 `SpatialData/coordinate audit → platform-native clustering baseline → SACCELERATOR method/metric manifest → spatial + non-spatial metrics → high-entropy review → independent validation`。手工标签作为比较层，不能自动视为真值；入口为 `python/18_saccelerator_manifest.py`。
