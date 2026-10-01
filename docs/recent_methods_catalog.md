@@ -28,3 +28,4 @@
 Mellon、MISO 和 SCMMIB 目前只生成 manifest；manifest 校验表示输入契约已经记录，不表示官方模型或 benchmark 已经完成复现。
 | SpatialData 空间数据结构与坐标互操作 | python/16_spatialdata_manifest.py | SpatialData/Zarr、表、图像、labels、shapes、points | manifest-only | element names、坐标系、单位、变换链、platform reader 和 serialization |
 | scikit-bio 通用序列/表格/距离/多样性/分类工具 | python/17_scikit_bio_manifest.py | sequence/table/metadata/distance/tree inputs | manifest-only | operation、format、ID、metadata、统计设计和 assay-specific baseline |
+| SACCELERATOR 空间域聚类与专家共识 | python/18_saccelerator_manifest.py | spatial data、method configs、metrics、optional expert labels | manifest-only | method commit、dataset split、ARI/NMI、CHAOS/PAS/entropy 和 review protocol |
