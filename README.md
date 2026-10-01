@@ -66,3 +66,8 @@ templates/script_header.R       分析脚本头部模板
 - `python/12_scmultibench_manifest.py`：scMultiBench 多任务多模态整合评估入口；先选择任务和 split，再比较 task-level metrics。
 
 这两个入口均为 manifest-only，适合把方法论文转成可审计的候选方案，不把 benchmark 登记误写成已复现结果。
+
+## 2026 蛋白上下文扩展
+
+- `python/14_pinnacle_manifest.py`：登记单细胞表达、PPI 网络、cell-type/tissue metadata 和可选 checkpoint，生成 context-aware protein/target prioritization 的可审计 manifest。
+- 先与 PPI degree、random walk、GAT 或任务特异的经典排序 baseline 比较；embedding/排序分数不能替代因果或药效验证。
