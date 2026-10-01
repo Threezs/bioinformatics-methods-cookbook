@@ -12,7 +12,7 @@
 | 轨迹、命运、velocity、多视图 | python/01_cellrank2_template.py | h5ad + kNN + time/velocity layer | runtime-required | fate 输出要按 sample/donor 汇总 |
 | 细胞状态密度和时间连续化 | python/09_mellon_template.py | cell representation + optional time metadata | manifest-only | 固定 representation；density 不是 lineage probability |
 | foundation model embedding | python/02–03 | h5ad/counts + pinned checkpoint | manifest-only | 许可、权重哈希、经典基线和 GPU 资源 |
-| 蛋白上下文与靶点优先级 | python/14_pinnacle_manifest.py | expression + PPI network + context metadata | manifest-only | 网络版本、上下文标签、checkpoint 和 held-out 排序指标 |
+| PINNACLE 蛋白上下文与靶点优先级 | python/14_pinnacle_manifest.py | expression + PPI network + context metadata | manifest-only | 网络版本、上下文标签、checkpoint 和 held-out 排序指标 |
 | 空间 niche/context transfer | python/04_nicheformer_template.py | spatial/context data + checkpoint | manifest-only | domain shift、切片/患者和外部验证 |
 | 多模态空间组学整合 | python/10_miso_manifest.py | aligned spatial modalities + optional image features | manifest-only | shared spot/cell key、坐标和 Python 3.7/Git-LFS |
 | 多模态整合 benchmark | python/11_scmmib_manifest.py | paired/unpaired/mosaic dataset manifest | manifest-only | ranking 依赖 task、modality 和 metric |
