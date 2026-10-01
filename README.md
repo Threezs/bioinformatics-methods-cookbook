@@ -11,12 +11,12 @@ R/03_gsea_fgsea_template.R     signed statistic → fgseaMultilevel
 R/04_tf_activity_template.R    regulon activity and ortholog audit
 R/theme_publication.R           统一 ggplot 主题和输出尺寸
 python/validate_count_matrix.py count matrix 结构检查
-docs/recent_methods_catalog.md  Nature Methods 近期方法选型地图
+docs/recent_methods_catalog.md  Nature Methods 近期方法选型地图\ndocs/function_map.md            按科研功能连接 bulk、单细胞、文献和对接
 docs/                           方法选择和解释边界
 templates/script_header.R       分析脚本头部模板
 ~~~
 
-近期单细胞、长读长和 foundation model 方法的可运行入口集中维护在 [nature-methods-bioinformatics-catalog](https://github.com/Threezs/nature-methods-bioinformatics-catalog)，其中 R 入口优先，Python 入口负责 CellRank 2、scGPT、scFoundation、Nicheformer、Monod、SATURN 和 UCE 的受控配置。
+近期单细胞、长读长和 foundation model 方法的入口集中维护在 [nature-methods-bioinformatics-catalog](https://github.com/Threezs/nature-methods-bioinformatics-catalog)。其中 R 入口优先；Python 入口明确区分 runtime-required 和 manifest-only，不把配置生成误写成模型推理。
 
 ## 使用原则
 
