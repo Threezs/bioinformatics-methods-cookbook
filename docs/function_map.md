@@ -43,3 +43,6 @@ PINNACLE 将表达上下文、PPI 网络和 cell-type/tissue 层级放进同一�
 ## 多模态复杂分支轨迹
 
 PHLOWER 适合多模态 cell ID 已对齐、且问题包含复杂分支树的场景。统一顺序是 `input audit → modality/key audit → root/direction audit → CellRank/graph baseline → PHLOWER → branch stability → independent validation`。结果回链到 literature-workbench 的 P018，不能把无向 embedding 或 regulator score升级成谱系和因果结论。
+## 空间数据基础设施
+
+SpatialData 不是一个自动完成生物学推断的模型，而是进入空间分析前的互操作层。统一顺序是 `input audit → element/coordinate/unit audit → platform-native QC → SpatialData read/write → Nicheformer/MISO 或邻域分析 → independent validation`。先记录 table/image/labels/shapes/points、坐标变换和存储格式；成功读写不等于 segmentation、registration 或空间信号已经正确。
