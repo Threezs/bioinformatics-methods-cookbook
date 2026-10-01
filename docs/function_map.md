@@ -35,3 +35,7 @@ CellRank、embedding、niche 和细胞比例输出先进入 catalog 的 docs/sam
 
 - scMultiBench：把 multimodal integration 评估拆成 reduction、batch correction、clustering、classification、imputation、feature selection 和 spatial registration，保留 task-level metrics。
 - NaRMBench：把 direct-RNA modification detection 拆成 preprocessing、retraining、evaluation 和 downstream validity；不要把 chemistry-specific performance 外推成普遍修饰机制。
+
+## 蛋白上下文与靶点优先级
+
+PINNACLE 将表达上下文、PPI 网络和 cell-type/tissue 层级放进同一个图表示框架。使用顺序是 `input audit → network/context audit → PPI baseline → PINNACLE manifest/inference → held-out ranking → independent validation`。结果回链到 literature-workbench 的 P017，并明确不能把 target score 写成因果功能或治疗疗效。
