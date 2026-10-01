@@ -11,7 +11,8 @@ R/03_gsea_fgsea_template.R     signed statistic → fgseaMultilevel
 R/04_tf_activity_template.R    regulon activity and ortholog audit
 R/theme_publication.R           统一 ggplot 主题和输出尺寸
 python/validate_count_matrix.py count matrix 结构检查
-docs/recent_methods_catalog.md  Nature Methods 近期方法选型地图\ndocs/function_map.md            按科研功能连接 bulk、单细胞、文献和对接
+docs/recent_methods_catalog.md  Nature Methods 近期方法选型地图
+docs/function_map.md            按科研功能连接 bulk、单细胞、文献和对接
 docs/                           方法选择和解释边界
 templates/script_header.R       分析脚本头部模板
 ~~~
