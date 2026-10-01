@@ -18,3 +18,7 @@
 input audit → baseline → method-specific analysis → sample-level summary → evidence card
 
 每个方法都要保存输入、输出、设计、对比、软件版本、随机种子和限制。人源网络映射到小鼠时，保存 ortholog 表、版本、one-to-many 规则和保留边数；foundation model 还要保存 checkpoint URL、版本、哈希、许可证和 GPU 资源。
+
+## 细胞级输出的统一规则
+
+CellRank、embedding、niche 和细胞比例输出先进入 catalog 的 docs/sample_level_reporting.md（https://github.com/Threezs/nature-methods-bioinformatics-catalog/blob/main/docs/sample_level_reporting.md），按 sample/donor 汇总后才进入条件比较。foundation model manifest 只表示输入和 checkpoint 已记录，不表示模型推理已经完成。
