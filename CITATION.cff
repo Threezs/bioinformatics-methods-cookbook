@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: "Bioinformatics Methods Cookbook"
+message: "Please cite this repository when reusing its recipes."
+type: software
+authors:
+  - family-names: Zhao
+    given-names: Zize
+repository-code: "https://github.com/Threezs/bioinformatics-methods-cookbook"
+license: "proprietary"
+version: "0.1.0"
